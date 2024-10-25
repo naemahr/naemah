@@ -11,6 +11,7 @@ body {
     color: #4a4a4a;
     background-color: #fdf8f8; /* Very light baby pink */
     line-height: 1.6;
+    font-size: 1em; /* Adjusted font size */
 }
 
 /* Header Styling */
@@ -24,7 +25,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 2.2em; /* Slightly reduced size for better readability */
     color: #cc7c8e; /* Soft rose pink */
     margin-bottom: 10px;
 }
@@ -53,11 +54,11 @@ nav ul li {
 nav ul li a {
     color: #4a4a4a;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 nav ul li a:hover {
-    color: #cc7c8e; /* Soft rose pink */
+    color: #cc7c8e;
 }
 
 /* Main Section */
@@ -68,48 +69,81 @@ main {
 }
 
 /* About Section */
-#about p {
-    font-size: 1.1em;
-    line-height: 1.7;
+.about-section {
+    background-color: #fdf0f6;
     color: #4a4a4a;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.7;
 }
 
-/* Article Section with Smaller Font */
-#articles h2 {
-    color: #cc7c8e; /* Soft rose pink */
+.about-section h2 {
+    font-size: 2em; /* Adjusted for readability */
+    color: #cc7c8e;
+    margin-bottom: 20px;
 }
 
-#articles h3 {
-    color: #5a5a5a;
-    margin-top: 20px;
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1em; /* Consistent font size */
+}
+
+/* Articles Section */
+#articles h2, #articles h3 {
+    color: #cc7c8e;
 }
 
 #articles p {
-    font-size: 0.9em; /* Smaller font size for article text */
+    font-size: 1em; /* Uniform font size */
     line-height: 1.5;
     color: #4a4a4a;
 }
 
-#articles .button {
+/* Image Styling */
+figure {
+    margin: 20px 0; /* Space above and below the image */
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+figure figcaption {
+    color: #a97a85;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* LinkedIn Button Styling */
+.linkedin-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ffb6c1; /* Soft pink */
+    background-color: #ffccd5;
     color: #fff;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-#articles .button:hover {
-    background-color: #ff91a1; /* Slightly darker pink for hover effect */
+.linkedin-button:hover {
+    background-color: #ff99a7;
+    transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-    background-color: #ffe4e8; /* Softer baby pink */
+    background-color: #ffe4e8;
     color: #4a4a4a;
     text-align: center;
     padding: 15px;
@@ -125,65 +159,5 @@ footer {
 
     nav ul li {
         margin: 10px 0;
-    }
-}
-/* LinkedIn Button Styling */
-.linkedin-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ffccd5; /* Soft pink */
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.linkedin-button:hover {
-    background-color: #ff99a7; /* Slightly darker pink on hover */
-    transform: scale(1.05); /* Slightly larger on hover */
-}
-/* About Section Styling */
-.about-section {
-    background-color: #fdf0f6; /* Soft pink background */
-    color: #4a4a4a; /* Dark grey for readability */
-    padding: 40px;
-    text-align: center;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: 'Georgia', serif; /* Elegant, serif font */
-    line-height: 1.7;
-}
-
-/* Styling for About Section Header */
-.about-section h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #cc7c8e; /* Softer pink for header */
-    margin-bottom: 20px;
-}
-
-/* Styling for About Section Paragraphs */
-.about-section p {
-    font-size: 1.2em;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 10px;
-}
-
-/* Adjusted for Mobile Responsiveness */
-@media (max-width: 768px) {
-    .about-section {
-        padding: 20px;
-    }
-
-    .about-section h2 {
-        font-size: 2em;
-    }
-
-    .about-section p {
-        font-size: 1.1em;
     }
 }
