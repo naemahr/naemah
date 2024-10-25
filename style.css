@@ -1,0 +1,147 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4a4a4a;
+    background-color: #fdf8f8; /* Very light baby pink */
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #ffe4e8; /* Softer baby pink */
+    color: #4a4a4a;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 3px solid #ffd6dd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #cc7c8e; /* Soft rose pink */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-style: italic;
+    color: #a97a85; /* Subtle pinkish grey */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #ffd6dd; /* Light pinkish beige */
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #4a4a4a;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #cc7c8e; /* Soft rose pink */
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* About Section */
+#about p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #4a4a4a;
+}
+
+/* Article Section with Smaller Font */
+#articles h2 {
+    color: #cc7c8e; /* Soft rose pink */
+}
+
+#articles h3 {
+    color: #5a5a5a;
+    margin-top: 20px;
+}
+
+#articles p {
+    font-size: 0.9em; /* Smaller font size for article text */
+    line-height: 1.5;
+    color: #4a4a4a;
+}
+
+#articles .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffb6c1; /* Soft pink */
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#articles .button:hover {
+    background-color: #ff91a1; /* Slightly darker pink for hover effect */
+}
+
+/* Footer */
+footer {
+    background-color: #ffe4e8; /* Softer baby pink */
+    color: #4a4a4a;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    border-top: 3px solid #ffd6dd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+/* LinkedIn Button Styling */
+.linkedin-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffccd5; /* Soft pink */
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.linkedin-button:hover {
+    background-color: #ff99a7; /* Slightly darker pink on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
