@@ -145,3 +145,45 @@ footer {
     background-color: #ff99a7; /* Slightly darker pink on hover */
     transform: scale(1.05); /* Slightly larger on hover */
 }
+/* About Section Styling */
+.about-section {
+    background-color: #fdf0f6; /* Soft pink background */
+    color: #4a4a4a; /* Dark grey for readability */
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif; /* Elegant, serif font */
+    line-height: 1.7;
+}
+
+/* Styling for About Section Header */
+.about-section h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #cc7c8e; /* Softer pink for header */
+    margin-bottom: 20px;
+}
+
+/* Styling for About Section Paragraphs */
+.about-section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Adjusted for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 20px;
+    }
+
+    .about-section h2 {
+        font-size: 2em;
+    }
+
+    .about-section p {
+        font-size: 1.1em;
+    }
+}
